@@ -1,4 +1,4 @@
-# Groundhog (CNA_Groundhog_2019)
+# Groundhog (CNA_groundhog_2019)
 Grounghog - Epitech project tek2
 
 ## Epitech automated tests
