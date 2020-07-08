@@ -15,3 +15,7 @@ Grounghog - Epitech project tek2
 50%
 - 05 - timing of switches -
 0%
+
+## Group members:  
+  - [@Captain](https://github.com/Monsterskx)
+  - [@mvetois](https://github.com/mvetois)

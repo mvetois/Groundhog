@@ -131,7 +131,7 @@ void Groundhog::Core(size_t nb)
 
     while (1) {
         if (std::scanf("%s", _input.c_str()) == EOF)
-            break;
+            exit(84);
         check = false;
         for (size_t i = 0, c = 0; i != strlen(_input.c_str()); i++) {
             if (_input.c_str()[0] == '-' && i == 0)
@@ -147,8 +147,10 @@ void Groundhog::Core(size_t nb)
         }
         if (std::strcmp(_input.c_str(), "STOP") == 0 || std::strcmp(_input.c_str(), "") == 0)
             break;
-        _data.push_back(std::atof(_input.c_str()));
-        exec(nb);
+        if ((check == true && std::strcmp(_input.c_str(), "STOP") != 0) || std::strcmp(_input.c_str(), "") == 0)
+            exit(84);
+            _data.push_back(std::atof(_input.c_str()));
+            exec(nb);
     }
     if (_data.size() < nb)
         exit(84);
